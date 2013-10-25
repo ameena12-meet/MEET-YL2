@@ -1,0 +1,21 @@
+(A) :- 
+*I typed : cd Desktop
+cd MEET-YL2
+cd Lab1 
+cd y2-yearlong-django-review
+cd toplists
+
+*then ..
+python manage.py syncdb
+python manage.py runserver
+
+*and to run the website I wrote : http://127.0.0.1:8000/movies
+
+(B) :- *It's http://127.0.0.1:8000/movies/1/
+* It's http://127.0.0.1:8000/movies/2/
+* It would be http://127.0.0.1:8000/movies/100/
+
+(C) :- * addmovie
+* movie_list
+* page not found
+
