@@ -23,11 +23,14 @@ def movie(request, movie_id):
     list_of_all_movies = Movie.objects.all()
     context = {'movie': movie}
     return render(request, 'movies/movie.html', context)
-    
+
 
 def add_comment(request, movie_id):
-    newcomment = comment(title=request.POST['comment_text'])
-    newcomment.save()
-    return HttpResponseRedirect('/movies')
+    newcomment = Comment(title=request.POST['comment_text'])
+    newcomment.save() 
+    return HttpResponseRedirect('/movie'
+
+           
     
+
 

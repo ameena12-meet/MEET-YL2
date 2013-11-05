@@ -27,10 +27,14 @@
 {% endif %}
 
 <!-- a form for adding a comment -->
-Add a comment:<br>
-<form action="movies/addcomment" method="post">
+Add a comment:
+<li><a href="/movies/{{ movie.id }}/">{{ comment.text }}</a></li>
+<form action="addcomment" method="post">
 {% csrf_token %}
-Comment: <input type="text"  name="comment_text"></br>
+Comment: <input type="text"  name="comment_text">
 <input type="submit" value="Add">
 </form>
+
+        
+        
 {% endblock %}

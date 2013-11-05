@@ -12,7 +12,7 @@ class Movie(models.Model):
     def __unicode__(self):
         return self.title
 
-class Comment(models.Model):
+class comment(models.Model):
     text = models.CharField(max_length=1000)
     # why does this have a ForeignKey relationship with
     # a movie? Because every comment is associated with
