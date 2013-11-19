@@ -26,9 +26,9 @@ def movie(request, movie_id):
 
 
 def add_comment(request, movie_id):
-    newcomment = Comment(title=request.POST['comment_text'])
+    newcomment = Comment(text=request.POST['comment_text'])
     newcomment.save() 
-    return HttpResponseRedirect('/movie')
+    return HttpResponseRedirect('(?P<movie_id>\d+)/addcomment')
 
            
     
